@@ -29,11 +29,13 @@ if err != nil {
 Example:
 
 func AddDocument(w http.ResponseWriter, r *http.Request){
+
   var document <YOur DOcument Model>
   err := json.NewDecoder(r.Body).Decode(&document)
   responseData := <DocumentQueryToDb>
   
   //201 - http.StatusCode- Created
+   
   leo.ResponseWriter(w, 201, "Message you want to print", responseData)
 }
 
