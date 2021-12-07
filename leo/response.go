@@ -1,4 +1,4 @@
-package leon
+package leo
 
 import (
 	"encoding/json"

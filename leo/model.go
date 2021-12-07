@@ -1,4 +1,4 @@
-package leon
+package leo
 
 type Response struct {
 	Code    int         `json:"code"`
